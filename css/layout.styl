@@ -1,0 +1,196 @@
+/**
+* Reset CSS
+* @class reset
+* @module base.css
+*/
+body
+	background #fff
+	color #333
+	font-family Verdana
+	margin 0
+a
+	color #5EA5CD
+	text-decoration none
+	&:hover
+		text-decoration underline
+img
+	border none
+p
+	margin 0 0 15px
+ul
+	margin 0
+	padding 0
+h1, h2
+	margin 0
+	padding 0
+header
+	background-color #603785
+	color #fff
+	min-width 700px
+	padding 20px 0
+	text-align center
+article
+	background-color #ececec
+	margin-top 20px
+	padding 30px 0
+footer
+	background-color #333
+	color #fff
+	margin-top 20px
+	padding 20px 0
+	text-align center
+
+/**
+* Landing CSS
+* @class Landing
+* @module base.css
+*/
+.wrapper_landing
+	margin 0 auto
+	padding 0 10px
+	position relative
+	width 680px
+	p
+		text-align center
+.row
+	*zoom 1
+	&:before,&:after
+		display table
+		content ""
+		line-height 0
+	&:after
+		clear both
+/**
+* Form CSS
+* @class Form
+* @module base.css
+*/
+.frm_validate
+	width 360px
+	margin 30px auto 0
+.form_control
+	margin-bottom 15px
+	*zoom 1
+	&:before,&:after
+		display table
+		content ""
+		line-height 0
+	&:after
+		clear both
+	label
+		margin 0
+		float left
+		font-size 16px
+		line-height 35px
+		float left
+		width 85px
+	input[type="text"],input[type="email"],input[type="tel"]
+		background-color #fff
+		border 1px solid #000
+		border-radius 10px
+		font-size 16px
+		height 30px
+		padding 2px 10px
+		width 250px
+		&.error
+			background-color #fcdddd
+			border 1px solid #fc7d7d
+.btn 
+	background #333
+	border none
+	border-radius 6px
+	color #fff
+	cursor pointer
+	font-size 17px
+	line-height 30px
+	margin 0 0 0 90px
+	padding 0px 20px
+	&:hover
+		background #ccc
+/* -- tipsy -- */
+.tipsy
+	background url("../img/tipsy.gif") no-repeat
+	font-size 10px
+	padding 5px
+.tipsy-inner
+	background-color #000
+	color #fff
+	max-width 200px
+	padding 5px 8px 4px
+	text-align center
+.tipsy-north
+	background-position center top
+.tipsy-south
+	background-position center bottom
+.tipsy-east
+	background-position right center
+.tipsy-west
+	background-position left center
+
+/* media queries for: 768px, 720px, 600px, 480px, 360px, 320px */
+@media (max-width:599px)
+	body
+		min-width 600px
+	header
+		min-width 600px
+	.wrapper_landing
+		width 580px
+		.txtinfo
+			font-size 16px
+			line-height 18px
+		.frm_validate
+			float none
+			margin 10px auto
+			width 380px
+			input[type="text"],input[type="email"],input[type="tel"]
+				margin-top 4px
+				width 270px
+		.btn 
+			margin-left 98px
+@media (max-width:359px)
+	body
+		background-image url("../images/bg-body320.jpg")
+		min-width 320px
+	header
+		background-image url("../images/bg-header320.png")
+		min-width 320px
+	.wrapper_landing
+		width 300px
+		.frm_validate
+			float none
+			margin 10px auto
+			width 100%
+			label
+				display block
+				float none
+				line-height 18px
+			input[type="text"],input[type="email"],input[type="tel"]
+				margin-top 4px
+				width 270px
+		.btn 
+			margin-left 18px
+@media (max-width:319px)
+	body
+		background-image url("../images/bg-body320.jpg")
+		min-width 128px
+	header
+		background-image url("../images/bg-header320.png")
+		min-width 128px
+	.wrapper_landing
+		width 120px
+		.frm_validate
+			float none
+			margin 10px auto
+			width 100%
+			label
+				display block
+				float none
+				line-height 18px
+			input[type="text"],input[type="email"],input[type="tel"]
+				margin-top 4px
+				width 270px
+		.btn 
+			margin-left 18px
+
+
+
